@@ -112,6 +112,19 @@ namespace kosar2004
                 }
             }
         }
+
+        static void Nyolcadik()
+        {
+            StreamWriter sw = new StreamWriter("eredmenyek.txt");
+            foreach (var m in meccsek)
+            {
+                sw.WriteLine(m.Atalakit());
+            }
+            sw.Close();
+        }
+ 
+
+
         static void Main(string[] args)
         {
             MasodikFeladat();
@@ -122,6 +135,8 @@ namespace kosar2004
             HatodikFeladat();
             Console.WriteLine("7.feladat:");
             HetedikFeladat();
+            Console.WriteLine("8.feladat.");
+            Nyolcadik();
             Console.ReadLine();
         }
     }

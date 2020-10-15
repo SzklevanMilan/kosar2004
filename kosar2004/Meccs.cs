@@ -27,5 +27,11 @@ namespace kosar2004
             //this.Ido = ido;
 
         }
+        public string Atalakit()
+        {
+            //7up Joventut -Breogán Lugo(97:83)
+
+            return $"{Hazai}-{Idegen} ({HPont}:{IPont})";
+        }
     }
 }
